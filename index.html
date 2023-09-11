@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">EXPENSE TRACKER</h1>
+        <div class="box">
+            <div class="meter">
+                <h3 id="incomeR">Income</h3>
+                <h4 id="incomeMeter">0</h4>
+            </div>
+            <div class="meter">
+                <h3 id="expenseR">Expense</h3>
+                <h4 id="expenseMeter">0</h4>
+            </div>
+            <div class="meter">
+                <h3 id="profit-loss"><span id="savings">Savings</span> </h3>
+                <h4 id="profitLossMeter">0</h4>
+            </div>
+        </div>
+        <div id="amount-input" class="amount-input">
+            <input  class="number" type="number" placeholder="Amount" id="transactionAmountInput">
+            <div class="btn-con">
+                <button class="income-btn" onclick="addIncome()">Income</button>
+                <button class="expense-btn" onclick="addExpense()">Expense</button>
+                <button class="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+
+</html>
+
+<!-- <div id="amount-input" class="amount-input">
+    <div id="transactionAmount" class="number"><input type="number" placeholder="Amount"></div>
+    <div id="income-btn" class="income-btn"> <button onclick="addIncome()">Income</button></div>
+    <div id="expense-btn" class="expense-btn"><button onclick="addExpense()">Expense</button></div>
+    <div id="reset" class="reset"><button onclick="reset()">Reset</button></div>
+</div> -->
